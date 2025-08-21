@@ -18,7 +18,7 @@ set $code code
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg /home/jexlerr/.config/sway/wallpaper/japanese_street_shop.png fill
 #
 # Example configuration:
 #
@@ -33,6 +33,20 @@ exec --no-startup-id /usr/lib/xdg-desktop-portal-wlr &
 exec --no-startup-id /usr/lib/xdg-desktop-porta -r
 
 exec_always gammastep -O 4000
+
+# Gaps
+gaps inner 4
+gaps outer 4
+
+# Color Scheme
+# class                 border    backgr.   text     indicator child_border
+client.focused          #49575d   #49575d   #d3c6aa  #a7c080   #2f383e
+client.focused_inactive #859289   #2f383e   #d3c6aa  #859289   #2f383e
+client.unfocused        #4b565c   #2f383e   #859289  #4b565c   #2f383e
+client.urgent           #e67e80   #2f383e   #e67e80  #e67e80   #2f383e
+client.placeholder      #2f383e   #2f383e   #d3c6aa  #2f383e   #2f383e
+
+client.background       #2f383e
 
 
 ### Key bindings
@@ -193,16 +207,16 @@ bindsym $mod+r mode "resize"
 # Read `man 5 sway-bar` for more information about this section.
 bar {
     position top
-
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
-    status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+    status_command ~/.config/sway/swaybar.sh &
 
     colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
+        statusline #d3c6aa   
+        background #2f383e   
+        inactive_workspace #2f383e00 #2f383e00 #859289  
+        focused_workspace #2f383e   #2f383e   #a7c080  
+        urgent_workspace #2f383e   #2f383e   #e67e80  
     }
+
 }
 
 include /etc/sway/config.d/*
