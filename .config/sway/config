@@ -23,7 +23,15 @@ output DP-1 resolution 1920x1080 position 1920,0
 #
 
 #Autostart
+
+exec --no-startup-id dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+
+exec --no-startup-id /usr/lib/xdg-desktop-portal-wlr &
+exec --no-startup-id /usr/lib/xdg-desktop-porta -r
+
 exec_always gammastep -O 4000
+
+
 ### Key bindings
 #
 # Basics:
@@ -46,6 +54,9 @@ exec_always gammastep -O 4000
 
     # Reload the configuration file
     bindsym $mod+Shift+c reload
+
+    # Screenshot
+    bindsym $mod+Shift+s exec grim -g "$(slurp)" - | wl-copy
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
