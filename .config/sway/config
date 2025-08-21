@@ -34,7 +34,7 @@ exec --no-startup-id /usr/lib/xdg-desktop-porta -r
 
 exec_always --no-startup-id gammastep -O 4000
 
-exec_always --no-startup-id swaync 
+exec --no-startup-id swaync 
 
 # Gaps
 gaps inner 4
