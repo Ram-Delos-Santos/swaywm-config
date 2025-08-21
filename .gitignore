@@ -6,3 +6,5 @@
 !.config/sway
 !.config/sway/*
 !.bashrc
+!.config/fastfetch
+!.config/fastfetch/*
