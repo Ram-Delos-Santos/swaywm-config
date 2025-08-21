@@ -20,7 +20,8 @@ set $code code
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 output * bg /home/jexlerr/.config/sway/wallpaper/japanese_street_shop.png fill
 #
-# Example configuration:
+# Font
+font pango:JetBrainsMono Nerd Font 11
 #
 output DP-1 resolution 1920x1080 position 1920,0
 #
