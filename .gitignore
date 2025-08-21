@@ -1,0 +1,8 @@
+*
+!.gitignore
+!.config/
+!.config/kitty
+!.config/kitty/*
+!.config/sway
+!.config/sway/*
+!.bashrc
