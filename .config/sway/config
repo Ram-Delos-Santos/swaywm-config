@@ -32,9 +32,9 @@ exec --no-startup-id dbus-update-activation-environment --systemd WAYLAND_DISPLA
 exec --no-startup-id /usr/lib/xdg-desktop-portal-wlr &
 exec --no-startup-id /usr/lib/xdg-desktop-porta -r
 
-exec_always gammastep -O 4000
+exec_always --no-startup-id gammastep -O 4000
 
-exec swaync &
+exec_always --no-startup-id swaync 
 
 # Gaps
 gaps inner 4
