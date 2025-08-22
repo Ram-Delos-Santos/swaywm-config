@@ -35,7 +35,9 @@ exec --no-startup-id /usr/lib/xdg-desktop-porta -r
 
 exec_always --no-startup-id gammastep -O 4000
 
-exec --no-startup-id swaync 
+exec --no-startup-id swaync
+
+exec --no-startup-id ~/.config/sway/pywal.sh &
 
 # Gaps
 gaps inner 4
@@ -43,13 +45,11 @@ gaps outer 4
 
 # Color Scheme
 # class                 border    backgr.   text     indicator child_border
-client.focused          #49575d   #49575d   #d3c6aa  #a7c080   #2f383e
-client.focused_inactive #859289   #2f383e   #d3c6aa  #859289   #2f383e
-client.unfocused        #4b565c   #2f383e   #859289  #4b565c   #2f383e
-client.urgent           #e67e80   #2f383e   #e67e80  #e67e80   #2f383e
-client.placeholder      #2f383e   #2f383e   #d3c6aa  #2f383e   #2f383e
-
-client.background       #2f383e
+client.focused          #8D9673   #8D9673   #c9ccbd  #c9ccbd   #2f383e
+client.focused_inactive #59654F   #59654F   #c9ccbd  #c9ccbd   #2f383e
+client.unfocused        #59654F   #59654F   #c9ccbd  #c9ccbd   #2f383e
+client.urgent           #c9ccbd   #c9ccbd   #c9ccbd  #c9ccbd   #2f383e
+client.placeholder      #2f383e   #2f383e   #c9ccbd  #c9ccbd   #2f383e
 
 
 ### Key bindings
@@ -213,11 +213,10 @@ bar {
     status_command ~/.config/sway/swaybar.sh &
 
     colors {
-        statusline #d3c6aa   
-        background #2f383e   
-        inactive_workspace #2f383e00 #2f383e00 #859289  
-        focused_workspace #2f383e   #2f383e   #a7c080  
-        urgent_workspace #2f383e   #2f383e   #e67e80  
+        statusline #c9ccbd 
+        background #59654F   
+        inactive_workspace #0E1410 #0E1410 #c9ccbd  
+        focused_workspace #7F886E   #7F886E   #c9ccbd  
     }
 
 }
