@@ -9,3 +9,7 @@
 !.config/fastfetch
 !.config/fastfetch/*
 !.vimrc
+!swaywm-rice
+!thumbnail.png
+!.themes/
+!.themes/**/*
