@@ -19,7 +19,7 @@ set $code code
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/jexlerr/.config/sway/wallpaper/japanese_street_shop.png fill
+output * bg /home/jexlerr/.config/sway/wallpaper/wallpaper3.jpg fill
 #
 # Font
 font pango:JetBrainsMono Nerd Font 11
@@ -215,7 +215,7 @@ bar {
     colors {
         statusline $color15 
         background $color1   
-        inactive_workspace $background $background $color15  
+        inactive_workspace $color1 $color1 $color15  
         focused_workspace $color6   $color6   $color15  
     }
 
