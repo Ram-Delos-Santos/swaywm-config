@@ -18,7 +18,7 @@ set $code code
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/jexlerr/.config/sway/wallpaper/japanese_street_shop.png fill
+output * bg ~/.config/sway/wallpaper/wallpaperflare.com_wallpaper.jpg fill
 #
 # Font
 font pango:JetBrainsMono Nerd Font 11
