@@ -1,11 +1,7 @@
 # 🌿 SwayWM Configuration Files
 This is my configuration files for a new linux rice using SwayWM.
 
-<a href="swaywm-rice">
-  <img src="thumbnail.png" width="800" alt="Watch Video">
-</a>
-
-
+<img src="swaywm-rice.gif" alt="Watch this showcase" width="800">
 
 ## 🍚 Rice Details
 - OS: EndeavourOS
