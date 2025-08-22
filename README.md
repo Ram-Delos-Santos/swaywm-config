@@ -1,9 +1,10 @@
 # 🌿 SwayWM Configuration Files
 This is my configuration files for a new linux rice using SwayWM.
 
-<video width="800" autoplay loop controls>
-  <source src="swaywm-rice" type="video/mp4">
-</video>
+<a href="swaywm-rice">
+  <img src="thumbnail.png" width="800" alt="Watch Video">
+</a>
+
 
 
 ## 🍚 Rice Details
