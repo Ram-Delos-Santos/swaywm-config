@@ -11,15 +11,14 @@ set $right l
 # Your preferred terminal emulator
 set $term kitty
 # Your preferred application launcher
-set $menu dmenu_run
+set $menu dmenu_run -fn 'JetBrainsMono Nerd Font' -nb \#0E0C14 -nf \#eadecf -sb \#666962 -sf \#eadecf
 
 set $browser google-chrome-stable
 set $code code
-
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/jexlerr/.config/sway/wallpaper/wallpaper3.jpg fill
+output * bg ~/.config/sway/wallpaper/wallpaper.jpg fill
 #
 # Font
 font pango:JetBrainsMono Nerd Font 11
@@ -76,7 +75,7 @@ client.urgent           $color14   $color14   $foreground  $foreground
     bindsym $mod+Shift+c reload
 
     # Screenshot
-    bindsym $mod+Shift+s exec grim -g "$(slurp)" - | wl-copy
+    bindsym $mod+Shift+s exec grim -g "$(slurp)" - | wl-copy | notify-send "Screenshot taken!"
 
     # Google
     bindsym $mod+b exec $browser
